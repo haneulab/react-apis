@@ -1,0 +1,36 @@
+{
+  "name": "@haneulab/react-apis",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/haneulab"
+  },
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A simple template for a custom React component library",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "8.3.3",
+    "@types/react": "^17.0.34",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
