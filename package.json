@@ -6,7 +6,7 @@
   "repository": {
     "url": "https://github.com/haneulab/react-apis.git"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "Useful react apis created by HaneuLab",
   "scripts": {
@@ -18,7 +18,7 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "8.3.3",
-    "@types/react": "^17.0.34",
+    "@types/react": "18.0.26",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -28,7 +28,7 @@
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "^18.2.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
