@@ -3,9 +3,12 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/haneulab"
   },
-  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/haneulab/react-apis.git"
+  },
+  "version": "0.0.2",
   "type": "module",
-  "description": "A simple template for a custom React component library",
+  "description": "Useful react apis created by HaneuLab",
   "scripts": {
     "rollup": "rollup -c"
   },
