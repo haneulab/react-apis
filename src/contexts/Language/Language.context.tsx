@@ -6,8 +6,9 @@ import React, {
   useState,
 } from "react";
 
-export type LanguageOptions<LanguageOptionExtension extends string = "en"> =
-  LanguageOptionExtension;
+export type LanguageOptions<
+  LanguageOptionExtension extends string = "en" | "ko"
+> = LanguageOptionExtension;
 
 export interface LanguageContextProps<LanguageOptions> {
   lang: LanguageOptions;
