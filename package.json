@@ -1,7 +1,7 @@
 {
   "name": "@haneulab/react-apis",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/haneulab"
+    "@haneulab:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "url": "https://github.com/haneulab/react-apis.git"
@@ -9,7 +9,7 @@
   "version": "0.0.11",
   "description": "Useful react apis created by HaneuLab",
   "scripts": {
-    "rollup": "rollup -c"
+    "build": "rollup -c"
   },
   "author": "",
   "license": "ISC",
