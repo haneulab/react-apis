@@ -6,7 +6,7 @@
   "repository": {
     "url": "https://github.com/haneulab/react-apis.git"
   },
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Useful react apis created by HaneuLab",
   "scripts": {
     "build": "rollup -c"
