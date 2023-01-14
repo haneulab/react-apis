@@ -15,6 +15,11 @@ const useRoute: UseRoute = (onRouteChange) => {
   });
 
   useEffect(() => {
+    setCurrent(router.pathname);
+    setPrevious(null);
+  }, []);
+
+  useEffect(() => {
     setPrevious(current);
     setCurrent(router.pathname);
   }, [router]);
@@ -35,10 +40,23 @@ const useRoute: UseRoute = (onRouteChange) => {
   return {
     ...router,
     pathname,
+    isRoute: (_route) => {
+      const isCurrent = _route === current;
+      const isPrevious = _route === previous;
+      return {
+        current: isCurrent,
+        previous: isPrevious,
+      };
+    },
   } as NextRouter & {
     pathname: {
       current: string;
       previous: string | null;
+    };
+  } & {
+    isRoute: (_route: string) => {
+      current: boolean;
+      previous: boolean;
     };
   };
 };

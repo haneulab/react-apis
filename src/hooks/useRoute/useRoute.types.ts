@@ -5,4 +5,8 @@ export type UseRoute = (onRouteChange?: () => void) => NextRouter & {
     current: string;
     previous: null | string;
   };
+  isRoute: (_route: string) => {
+    current: boolean;
+    previous: boolean;
+  };
 };
