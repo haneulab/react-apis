@@ -1,12 +1,16 @@
 import { type NextRouter } from "next/router";
 
+export interface Pathname {
+  current: string;
+  previous: null | string;
+}
+
+export interface IsRoutePathname {
+  current: boolean;
+  previous: boolean;
+}
+
 export type UseRoute = (onRouteChange?: () => void) => NextRouter & {
-  pathname: {
-    current: string;
-    previous: null | string;
-  };
-  isRoute: (_route: string) => {
-    current: boolean;
-    previous: boolean;
-  };
+  pathname: Pathname;
+  isRoute: (_route: string) => IsRoutePathname;
 };

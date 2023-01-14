@@ -1,6 +1,10 @@
 import { NextRouter, useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { type UseRoute } from "./useRoute.types";
+import {
+  IsRoutePathname,
+  type Pathname,
+  type UseRoute,
+} from "./useRoute.types";
 
 const useRoute: UseRoute = (onRouteChange) => {
   const router = useRouter();
@@ -41,23 +45,14 @@ const useRoute: UseRoute = (onRouteChange) => {
     ...router,
     pathname,
     isRoute: (_route) => {
-      const isCurrent = _route === current;
-      const isPrevious = _route === previous;
       return {
-        current: isCurrent,
-        previous: isPrevious,
+        current: _route === current,
+        previous: _route === previous,
       };
     },
   } as NextRouter & {
-    pathname: {
-      current: string;
-      previous: string | null;
-    };
-  } & {
-    isRoute: (_route: string) => {
-      current: boolean;
-      previous: boolean;
-    };
+    pathname: Pathname;
+    isRoute: (_route: string) => IsRoutePathname;
   };
 };
 

@@ -6,7 +6,7 @@
   "repository": {
     "url": "https://github.com/haneulab/react-apis.git"
   },
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Useful react apis created by HaneuLab",
   "scripts": {
     "rollup": "rollup -c"
@@ -20,6 +20,9 @@
     "@types/next": "^9.0.0",
     "@types/react": "18.0.26",
     "@types/react-dom": "^18.0.10",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -31,7 +34,7 @@
   "peerDependencies": {
     "next": "^12.2.5",
     "react": "^18.2.0",
-    "reac-dom": "^18.2.0"
+    "react-dom": "^18.2.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
